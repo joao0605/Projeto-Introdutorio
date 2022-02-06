@@ -14,7 +14,7 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         byte ans;
         List<Task> list = new ArrayList<>();
-        Task task = new Task();
+
 
         System.out.println("           ### Seja bem vindo(a) ao Acelera Tasks ###");
         System.out.println("### Uma ferramenta que te permite organizar e agilizar suas atividades ###");
@@ -28,7 +28,7 @@ public class Program {
 
             switch (ans) {
                 case 1:
-
+                    Task task = new Task();
                     task.register();
                     list.add(task);
 

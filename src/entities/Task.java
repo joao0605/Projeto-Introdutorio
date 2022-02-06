@@ -168,10 +168,10 @@ public class Task {
     public String toString() {
         return " ## Tarefa ID " + id +
                 " ##\n " + name + "\n" +
-                ", Descrição: " + description + '\n' +
-                ", Data de entrega: " + deadline + "\n" +
-                ", Prioridade: " + priority + "\n" +
-                ", Categoria: " + category + "\n" +
-                ", Status: " + status + "\n \n" ;
+                " Descrição: " + description + '\n' +
+                " Data de entrega: " + deadline + "\n" +
+                " Prioridade: " + priority + "\n" +
+                " Categoria: " + category + "\n" +
+                " Status: " + status + "\n \n" ;
     }
 }
