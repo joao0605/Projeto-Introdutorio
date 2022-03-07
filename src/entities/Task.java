@@ -19,7 +19,7 @@ public class Task {
     private String category;
     private TaskStatus status;
     private int id;
-
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 
     public Task(){
@@ -94,7 +94,7 @@ public class Task {
 
     public void register() {
         Scanner sc = new Scanner(System.in);
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
         String date;
         Date now = new Date(); // para impedir o cadastro de datas no passado
         int priority;
@@ -169,7 +169,7 @@ public class Task {
         return " ## Tarefa ID " + id +
                 " ##\n " + name + "\n" +
                 " Descrição: " + description + '\n' +
-                " Data de entrega: " + deadline + "\n" +
+                " Data de entrega: " + deadline + "\n" + // não encontrei um método de conversão da data para o formato dd/mm/AAAA, o sdf.parse() não funcionou aqui.
                 " Prioridade: " + priority + "\n" +
                 " Categoria: " + category + "\n" +
                 " Status: " + status + "\n \n" ;
